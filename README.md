@@ -1,10 +1,10 @@
-# 🌊 Wave Court
+# Wave Court
 
 **Wave Court** is an interactive, real-time 2D quantum physics simulation and arcade game for Android. Players use potential-energy rackets to rally, manipulate, and collapse a simulated **Bose-Einstein Condensate (BEC)** governed by the time-dependent **Gross-Pitaevskii Equation (GPE)** at a locked 60 FPS.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Real-Time Quantum Fluid Dynamics:** Solves the 2D nonlinear Gross-Pitaevskii equation on a 128 &times; 128 spatial grid in real time.
 - **Tunable Nonlinear Self-Interaction (<i>g</i>-Slider):** Adjust the effective scattering length in real time:
@@ -20,7 +20,7 @@
 
 ---
 
-## 🔬 Physics & Numerical Methods
+## Physics & Numerical Methods
 
 Wave Court evolves the dimensionless 2D Gross-Pitaevskii equation (&hbar; = <i>m</i> = 1):
 
@@ -35,7 +35,7 @@ Wave Court evolves the dimensionless 2D Gross-Pitaevskii equation (&hbar; = <i>m
 
 ---
 
-## ⚙️ Technical Architecture
+## Technical Architecture
 
 - **Decoupled Multithreading:** The physics solver runs on a dedicated background worker thread, keeping the UI thread completely non-blocking.
 - **Cache-Friendly Memory Layout:** The 2D complex wavefunction grid is flattened into separate 1D real and imaginary arrays (Structure of Arrays) to maximize CPU cache locality during ADI sweeps.
@@ -44,7 +44,7 @@ Wave Court evolves the dimensionless 2D Gross-Pitaevskii equation (&hbar; = <i>m
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Android Studio (Ladybug or newer recommended)
@@ -62,6 +62,6 @@ Wave Court evolves the dimensionless 2D Gross-Pitaevskii equation (&hbar; = <i>m
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
